@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  position: relative;
+  color: white;
+}
+
+
+a {
+	color: #f16600;
+	text-decoration: none;
+}
+
+
+a:hover {
+	color: #049da3;
+	text-decoration: underline;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 5em;
+  font-weight: bold;
+  margin: .3em;
+}
+
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 3em;
+  margin-top: .4em;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 2em;
+  margin-top: .4em;
+}
+
+
+#logo {
+  max-height: 450px;
+  max-width: 450px;
+  box-shadow: none;
+  margin-bottom: 30px;
+  /*filter: drop-shadow(0px 0px 3px orange);*/
+}
+
+
+#book {
+max-height: 500px;
+margin-top: 20px;
+}
+
+
+img {
+	border: none;
+}
+
+
+p {
+	margin: 1em 1em;
+	font-family: overpass, sans-serif;
+	color: white;
+	font-size: 1.1em;
+	text-align: justify;
+}
+
+
+#fb {
+	background-color: #3b5998;
+	vertical-align: middle;
+	text-align: left;
+	transition: transform .5s;
+}
+
+
+#fb:hover {
+	text-decoration: none;
+	transform: scale(1.02);
+}
+
+
+#fb span {
+	vertical-align: middle;
+}
+
+
+#sot {
+	background-color: #f16600;
+	vertical-align: middle;
+	background-position: center;
+	text-align: center;
+	transition: transform .5s;
+	height: 66px;
+	left: 20px;
+}
+
+
+#sot:hover {
+	text-decoration: none;
+	transform: scale(1.02);
+}
+
+
+#icon {
+	max-width: 1.5em;
+	vertical-align: middle;
+	margin-right: 1em;
+	text-align: left;
+}
+
+
+.background-image {
+  position: relative;
+  background-position: center;
+  z-index: -1;
+  background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('http://i.imgur.com/usyUEWD.jpg');
+  height: 1000px;
+  background-size: cover;
+  filter: blur(0px);
+  text-align: center;
+}
+
+
+.background-content {
+  position: absolute;
+  width: 100%;
+  margin-top: 1em;
+}
+
+
+.content {
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+
+.about-me {
+  background-color: #f28724;
+  padding: 1em 0em;
+  height: 400px;
+  text-align: center;
+}
+
+
+.about-me-img {
+	background-image: url('img/unicon_anthony.jpg');
+	background-size: cover;
+	height: 400px
+}
+
+
+.row {
+	max-width: 100%;
+}
+
+
+.sot-background {
+	text-align: center;
+	background: linear-gradient(rgba(50, 50, 50, 0.96), rgba(50, 50, 50, 0.96)), url('img/books.jpg');
+	background-size: cover;
+	filter: blur(0px);
+	margin: 0;
+}
+
+
+.sot-content {
+	margin-bottom: 2em;
+	font-size: 1.4em;
+}
+
+
+.unicrew {
+	background-color: #f28724;
+}
+
+.unicrew-img {
+	text-align: center;
+}
+
+#uni {
+	max-height: 300px;
+	border-radius: 100%;
+	box-shadow: inset 10px 10px 10px #000;
+	z-index: -400;
+}
+
+
+
+/*
+<div class="nav">
+  <ul>
+    <a href="#"><li>About Me</li></a>
+    <a href="#"><li>Home</li></a>
+    <a href="#"><li>Projects</li></a>
+  </ul>
+</div>
+            
+            
+.nav {
+  text-align: center;
+  color: gray;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  width: 100%;
+}
+
+li {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 1em 2em;
+  margin: 0 1em;
+  border: 2px solid white;
+  transition: transform .5s;
+}
+
+li:hover {
+  background-color: rgba(230,230,230,.3);
+  transform: scale(1.05);
+}
+            
+*/
