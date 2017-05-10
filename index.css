@@ -11,6 +11,9 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	margin-left: 0;
+}
 
 a:hover, a:active, a:focus {
 	color: #049da3;
