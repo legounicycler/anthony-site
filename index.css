@@ -1,23 +1,8 @@
 
-.construction {
-	background-color: rgba(10, 10, 10, 0.95);
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	height: 4000px;
-	z-index: 999;
-	position: absolute;
-	width: 100%;
-}
-
-.construction h1, h2{
-	padding-top: 2em;
-}
-
 body {
   margin: 0;
   position: relative;
-  color: white;
+  color: #f28724;
 }
 
 
@@ -89,6 +74,10 @@ max-height: 500px;
 margin-top: 20px;
 }
 
+#crew-info p {
+	font-size: .8em;
+}
+
 
 img {
 	border: none;
@@ -99,7 +88,7 @@ p {
 	margin: 1em 1em;
 	font-family: overpass, sans-serif;
 	color: white;
-	font-size: 1.1em;
+	font-size: 1em;
 	text-align: justify;
 }
 
@@ -153,11 +142,11 @@ p {
 	max-width: 250px;
 }
 
+#arrow {
+	box-shadow: none;
+}
 .background-image {
-  position: relative;
-  background-position: center auto;
-  z-index: -1;
-  background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('img/LA.jpg');
+  background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('img/LA.jpg') center;
   height: 1000px;
   background-size: cover;
   filter: blur(0px);
@@ -185,13 +174,15 @@ p {
   padding: 1em 0em;
   height: 400px;
   text-align: center;
+  font-size: 1.1em;
 }
 
 
 .about-me-img {
-	background-image: url('img/unicon_anthony.jpg');
+	background-image: url('img/anthony.jpg');
 	background-size: cover;
-	height: 400px
+	background-position: top center;
+	height: 400px;
 }
 
 
@@ -223,7 +214,7 @@ p {
 .funfact-img {
 	background: url('img/mt_whitney.jpg');
 	background-size: cover;
-	background-position: 0 -120px;
+	background-position:  center;
 	height: 400px;
 	background-repeat: false;
 }
@@ -259,12 +250,64 @@ p {
 }
 	
 
-
-@media only screen and (max-width: 1023px) {
-	.about-me-img {
-		background: #f28724;
-		
+@media only screen and (max-width: 1474px) {
+	h1 {
+		font-size: 4.8em;
 	}
+	li {
+		font-size: 1.7em;
+	}
+}
+
+@media only screen and (max-width: 1415px) {
+	h1 {
+		font-size: 4.5em;
+	}
+}
+
+@media only screen and (max-width: 1278px) {
+	iframe {
+		width: 300px;
+		height: 168px;
+	}
+	p {
+		font-size: 1em;
+	}
+	.about-me {
+		font-size: .96em;
+		
+}
+
+
+	
+@media only screen and (max-width: 1023px) {
+	h3 {
+		font-size: 2.5em;
+	}
+	#book {
+		max-height: 450px;
+	}
+	.unicrew-content {
+		font-size: 1.2em;
+	}
+	.sot-content {
+		font-size: 1.2em;
+	
+	}
+	.about-me {
+		font-size: 1em;
+		height: auto;
+	}
+	.row {
+		display: inline-block;
+	}
+	#button-row {
+		width: 100%;
+	}
+	#icon {
+		max-width: 1.3em;
+	}
+	
 }
 
 
@@ -280,6 +323,15 @@ p {
 	.background-image {
 		height: 650px;
 	}
+	li {
+		font-size: 1.1em;
+	}
+	#arrow {
+		height: 50px;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
 
 	
 @media only screen and (max-width: 885px) {
@@ -288,9 +340,92 @@ p {
 	}
 }
 
+@media only screen and (max-width: 585px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	li {
+		font-size: .8em;
+	}
+	p {
+		font-size: .8em;
+	}
+	#unicrew_logo {
+		max-width: 180px;
+	}
+	.unicrew-content {
+		font-size: 1em;
+	}
+	.sot-content {
+		font-size: 1em;
+	}
+	
+}
+
+@media only screen and (max-width: 487px) {
+	h1 {
+		font-size: 1.9em;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+	.sot-content {
+		font-size: 1em;
+	}
+	.unicrew-content {
+		font-size: 1em;
+	}
+	.about-me {
+		font-size: .8em;
+	}
+	#logo {
+		max-width: 240px;
+	}
+	#arrow {
+		height: 40px;
+	}
+	li {
+		font-size: .7em;
+		border-width: 2px;
+	}
+	#book {
+		max-height: 350px;
+	}
+}
+
+@media only screen and (max-width: 340px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	li {
+		font-size: .6em;
+	}
+	#logo {
+		max-width: 180px;
+	}
+	#arrow {
+		height: 30px;
+	}
+	iframe {
+		width: 280px;
+		height: 158px;
+	}
+	.background-image {
+		height: 550px;
+	}
+		
+}
 
 
+/*weird foundation thing to make the button text not wrap*/
+@media screen and (min-width: 40em) {
 
+.medium-4 {
+    width: 40%;
+}
 
 
 
