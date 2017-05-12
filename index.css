@@ -305,6 +305,7 @@ p {
 .final {
 	font-size: .7em;
 	border-bottom: 2px solid white;
+	padding-bottom: 1em;
 }
 	
 #sitelength {
