@@ -283,7 +283,7 @@ p {
 }
 
 .footer a:hover, a:active, a:focus {
-	color: white;
+	color: #f9f4e8;
 	text-decoration: underline;
 }
 
