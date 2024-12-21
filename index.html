@@ -5,41 +5,64 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anthony Limiero</title>
-    <!-- <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css"> -->
+	<link href="css/materialize.min.css" rel="stylesheet" type="text/css" />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Oswald|Overpass|Raleway:200,400" rel="stylesheet">
   </head>
   
     <body>
 
-      <div class="background-image">
-        <div class="background-content">
-           <h1>HI, I'M ANTHONY LIMIERO.</h1>
-		   <ul>
-			<li>Author</li>
-			<li>Unicyclist</li>
-			<li>Engineer</li>
-		   </ul>
-          
-          <img id='logo' src="img/anthony_logo_v3.gif">
-          
-          <h2>Learn more about me</h2>
-          
-          <a href='#middle'><img src="img/arrow.png" id="arrow" title="Learn more"></a>
-        </div>
+      <div id="landing-background" class="row center-align">
+		<div class="col m12 s12 hide-on-large-only">
+			<h1>HI, I'M ANTHONY LIMIERO.</h1>
+		</div>
+		<div id="profile-col" class="col l5 m12 s12 valign-wrapper">
+			<img id='profile' class="circle " src="img/Profile.jpg">
+		</div>
+	  	<div class="col m12 s12 hide-on-large-only">
+			<div class="row container g-1">
+				<div class="col s4 bordered-col"><span>Unicyclist</span></div>
+				<div class="col s4 bordered-col"><span>Author</span></div>
+				<div class="col s4 bordered-col"><span>Engineer</span></div>
+			</div>
+			<h2>Learn more about me</h2>
+          	<a href='#middle'><img src="img/arrow.png" id="arrow" title="Learn more"></a>
+		</div>
+		<div id="hello-col" class="col l7 m12 s12 valign-wrapper center-align hide-on-med-and-down">
+			<div class="container">
+				<h1>HI, I'M ANTHONY LIMIERO.</h1>
+				<div class="row g-1">
+					<div class="col l4 bordered-col"><span>Unicyclist</span></div>
+					<div class="col l4 bordered-col"><span>Author</span></div>
+					<div class="col l4 bordered-col"><span>Engineer</span></div>
+				</div>
+				<h2>Learn more about me</h2>
+				<a href='#middle'><img src="img/arrow.png" id="arrow" title="Learn more"></a>
+			</div>
+		</div>
+
       </div>
+
         
-      <div class="content">
+      <main>
 	  
 		<a name="middle"></a>
-		<div class="row collapse">
-			<div class="about-me large-6 columns">
-			<h4>Who am I?</h4>
-			  <p>I am a self-published author, extreme unicyclist, aerospace engineer, and lover of all weird hobbies.</p>
-			  <p>I am currently a campus minister at the Georgia Institute of Technology in Atlanta, Georgia with a bachelor's of science in Aerospace Engineering.</p>
+		<div class="row g-0">
+			<div id="about-me" class="col l6">
+				<h4>Who am I?</h4>
+				<p class="flow-text">I am currently working as a campus minister at the <a href="https://gtccf.org">Georgia Tech CCF</a> in Atlanta, Georgia.</p>
+				<p class="flow-text">I graduated from Georgia Tech in 2022 with a B.S. in Aerospace Engineering, and I'm currently searching for jobs in the industry.</p>
+				<p class="flow-text">I am also a self-published author, extreme unicyclist, maker, climber, musician, and much more. If you're interested in any of that, read on, or if you're just looking for some quick links, you can find my LinkedIn and Instagram below.</p>
+				<div class="row">
+					<div class="col l6">
+						<a href="https://www.linkedin.com/in/anthony-limiero"><img src="img/linkedin.png" class="social-icon" title="LinkedIn"></a>
+					</div>
+					<div class="col l6">
+						<a href="https://www.instagram.com/legounicycler/"><img src="img/insta.png" class="social-icon" title="Instagram"></a>
+					</div>
+				</div>
 			</div>
-			<div class="about-me-img large-6 columns"></div>
+			<div id="about-me-img" class="col l6"></div>
 		</div>
 		
 		
@@ -47,22 +70,22 @@
 			<div class="sot-content">
 				<h3>My book.</h3>
 				<div class="row">
-					<div class="large-4 columns">
+					<div class="col l4">
 						<img src="img/son_of_time_render.jpg" id="book" title="Son of Time Book">
 					</div>
 					
-					<div class="large-8 columns">
+					<div class="col l8">
 						<p>I wrote and self-published this really cool book with my friend. It has magic, time travel, wizards, dragons, dwarves, and lots of sarcasm. Inspired by the Percy Jackson series, this book is aimed at elementary and junior high school kids who love a witty and humorous adventure novel.</p>
 						<p>The novel was written, edited, and published between my seventh grade and senior year. You can purchase it on <a href="https://amazon.com/sonoftime">Amazon</a> for $12.99 or visit the website (designed by yours truly) at <a href="https://www.sonoftimechronicles.com">www.sonoftimechronicles.com</a>.
 						
 						<div class="row" id="button-row">
 						
-							<div class="columns medium-4">
+							<div class="col m4">
 								<a href="https://www.facebook.com/sonoftimechronicles" class="large expanded button" id="fb" >
 								<img src="img/facebook.png" id="icon"/>Facebook</a>
 							</div>
 							
-							<div class="columns medium-4">
+							<div class="col m4">
 								<a href="http://www.sonoftimechronicles.com" class="large expanded button" id="sot" >Visit the website</a>
 							</div>
 						</div>
@@ -71,39 +94,27 @@
 			</div>
 		</div>
 		
-		
-		<div class="row funfact ">
-			<div class="funfact-img large-6 columns">
-			</div>
-			<div class="about-me large-6 columns">
-			  <h4>Fun Fact:</h4>
-			  <p>The outdoors is one of my passions. I love to hike, camp, ride, backpack, climb. I even summited Mt. Whitney in 14 hours, the tallest peak in the contiguous United States.</p>
-			  <p>"<i>Wilderness is not a luxury but a necessity of the human spirit, and as vital to our lives as water and good bread.</i>"</p>
-			  <p style="text-align: right;">-Edward Abbey</p>
-			</div>
-		</div>
-		
 		<div class="row unicrew-background">
 			<div class="unicrew-content">
 				<h3>Unicycling.</h3>
 				<div class="row">
-					<div class="large-4 columns">
+					<div class="col l4">
 						<img src="img/unicrew.jpeg" id="unicrew_logo">
 						<p>I am a member of The UniCrew. We are a group of extreme unicyclists from Bakersfield, California co-founded by myself and Jason Colaw. We make videos, ride in local performances, and even compete internationally.<p>
 						<p>To find out more information about what exactly we do, visit <a href="https://www.theunicrew.com">theunicrew.com</a> (website also designed by yours truly).</p>
 					</div>
-					<div class="large-8 columns">
+					<div class="col l8">
 						<h4>Our Videos.</h4>
 						<p style="margin-bottom: 1em;">Most people don't know what to think when they hear "extreme unicycling," so here's a little taste of what that truly looks like.</p>
 						<div class="row videos">
-							<div class="medium-6 columns">
+							<div class="col m6">
 								
 								<iframe width="400" height="225" src="https://www.youtube.com/embed/0yvavVrgK2Y" frameborder="0" allowfullscreen=""></iframe>
 								<p>The world championships in Spain.</p>
 								<iframe width="400" height="225" src="https://www.youtube.com/embed/rVlLYcpvfYE" frameborder="0" allowfullscreen=""></iframe>
 								<p>My first unicycling video.</p>
 							</div>
-							<div class="medium-6 columns">
+							<div class="col m6">
 								
 								<iframe width="400" height="225" src="https://www.youtube.com/embed/EenPhoVWK1M" frameborder="0" allowfullscreen=""></iframe>
 								<p>Riding during summer 2015.</p>
@@ -118,7 +129,7 @@
 		</div>
 		
 
-		<div class="footer">
+		<!-- <div class="footer">
 
 			<div class="row social">
 				<h2>Learn more about me on social media:</h2>
@@ -135,7 +146,7 @@
 
 			<div class="row final"><img src="img/Anthony_logo_white.gif" title="Anthony Limiero">Copyright 2017. Site by Anthony Limiero. All Rights Reserved.</div>
 
-		</div>
+		</div> -->
 
       </div>
     </body>
