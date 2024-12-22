@@ -2,13 +2,13 @@
 
 body {
   font-family: overpass, sans-serif;
-  background-color: #F0F0F0
-  /* color: white; */
+  background-color: #F0F0F0;
+  color: white;
 }
 
 a {
-	color: #FFFFFF;
 	text-decoration: underline;
+	color: inherit;
 }
 
 a:hover, a:active, a:focus {
@@ -16,46 +16,37 @@ a:hover, a:active, a:focus {
 	text-decoration: underline;
 }
 
-
 h1 {
   font-family: 'Open Sans', sans-serif;
-  color: white;
   font-size: 5em;
   font-weight: bold;
 }
 
-
 h2 {
   font-family: 'Raleway', sans-serif;
-  color: white;
   font-size: 2em;
   font-weight: 200;
 }
 
-
 h3 {
   font-family: 'Raleway', sans-serif;
-  color: white;
   font-size: 3em;
   margin-top: .4em;
 }
 
 h4 {
 	font-family: 'Oswald', sans-serif;
-	color: white;
 	font-size: 3em;
 }
 
 p {
 	font-family: overpass, sans-serif;
-	color: white;
-	font-size: 1em;
+	font-size: 1.5em;
 	text-align: justify;
 }
 
 #landing span {
 	font-family: 'Oswald', sans-serif;
-  	color: white;
   	font-size: 2em;
 }
 
@@ -64,10 +55,10 @@ p {
   	font-size: 2em;
 }
 
-/* LAYOUT */
+/* LANDING */
 
 #landing{
-	background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('../img/Banner4.jpg') center;
+	background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('../img/Banner5.jpg') center;
 	background-size: cover;
 	height: 100vh;
 	width: 100%
@@ -89,12 +80,14 @@ p {
 	border-color: white;
 }
 
+/* ABOUT ME */
+
 #about-me-col {
 	background-color: #f28724;
 	padding: 0em 2em 2em 2em;
 	text-align: center;
 	font-size: 1.1em;
-  }
+}
 
 #about-me-img {
 	background-image: url('../img/banner6.jpg');
@@ -112,37 +105,16 @@ p {
 	transition: transform .2s ease;
 }
 
+/* UNICYCLIST */
 
-/* #book {
-max-height: 500px;
-margin-top: 20px;
+/* AUTHOR */
+
+#author-row {
+	background: linear-gradient(rgba(50, 50, 50, 0.93), rgba(50, 50, 50, 0.93)), url('../img/books.jpg');
+	background-size: cover;
 }
 
-#crew-info p {
-	font-size: .8em;
-}
-
-
-#fb {
-	background-color: #3b5998;
-	vertical-align: middle;
-	text-align: left;
-	transition: transform .5s;
-}
-
-
-#fb:hover {
-	text-decoration: none;
-	transform: scale(1.02);
-}
-
-
-#fb span {
-	vertical-align: middle;
-}
-
-
-#sot {
+/* #sot {
 	background-color: #f28724;
 	vertical-align: middle;
 	background-position: center;
@@ -158,153 +130,13 @@ margin-top: 20px;
 	transform: scale(1.02);
 }
 
-
-#icon {
-	max-width: 1.5em;
-	vertical-align: middle;
-	margin-right: 1em;
-	text-align: left;
-}
-
-#unicrew_logo {
-	border-radius: 100%;
-	margin: 1em;
-	max-width: 250px;
-}
-
-#arrow {
-	box-shadow: none;
-}
-
-.background-image {
-  background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('../img/Banner4.jpg') center;
-  height: 1000px;
-  background-size: cover;
-  filter: blur(0px);
-  text-align: center;
-}
-
-
-.background-content {
-  position: absolute;
-  width: 100%;
-  margin-top: 1em;
-}
-
-
-.sot-background {
-	text-align: center;
-	background: linear-gradient(rgba(50, 50, 50, 0.96), rgba(50, 50, 50, 0.96)), url('../img/books.jpg');
-	background-size: cover;
-	margin: 0;
-}
-
-
-.sot-content {
-	margin-bottom: 2em;
-	font-size: 1.4em;
-}
-
-
-.funfact {
-	background-color: #f28724;
-}
-
-.funfact-img {
-	background: url('../img/whitney.jpg');
-	background-size: cover;
-	background-position:  center;
-	height: 400px;
-	background-repeat: false;
-}
-
-.unicrew-background {
-	text-align: center;
-	background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.9)), url('../img/newspaper.jpg');
-	background-size: cover;
-	margin: 0;
-}
-
-.unicrew-content {
-	font-size: 1.4em;
-	margin-bottom: 2em;
-}
-
-.unicrew-content p {
-	font-size: .9em;
-	margin: 0 2em;
-	padding: .2em .5em;
-	background-color: rgba(0, 0, 0, .3);
-}
-
-.unicrew-content h4 {
-	text-shadow: 2px 2px 10px black;
-}
-
-.videos p {
-		background: none;
-		margin-bottom: 2em;
-		text-align: center;
-		font-size: .6em;
+#book {
+max-height: 500px;
+margin-top: 20px;
 } */
 
-/*FOOTER CONTENT*/
-	
-/* .footer {
-	background-color: #f28724;
-	text-align: center;
-	padding: 2em;
-}
 
-.sites {
-	display: inline-block;
-	padding: 1em 0;
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;	
-	width: 500px;
-}
-
-.social {
-	border-top: 2px solid white;
-	padding-top: 1em;
-}
-
-.footer img {
-	height: 40px;
-	width: 40px;
-	margin: 1em 2em;
-	box-shadow: none;
-}
-
-.footer a:hover, a:active, a:focus {
-	color: #f9f4e8;
-	text-decoration: underline;
-}
-
-.footer a {
-	color: white;
-	text-decoration: underline;
-}
-
-.footer h2 {
-	font-size: 1.2em;
-	margin-bottom: 1em;
-}
-	
-#sitelink {
-	margin: 2em;
-	font-size: 1em;
-}
-	
-.final {
-	font-size: .7em;
-	border-bottom: 2px solid white;
-	padding-bottom: 1em;
-} */
-	
-
-
-
+/* ENGINEER */
 
 
 
@@ -521,4 +353,124 @@ margin-top: 20px;
 		height: 550px;
 	}
 		
+} */
+
+
+/* #crew-info p {
+	font-size: .8em;
+}
+
+
+#fb {
+	background-color: #3b5998;
+	vertical-align: middle;
+	text-align: left;
+	transition: transform .5s;
+}
+
+
+#fb:hover {
+	text-decoration: none;
+	transform: scale(1.02);
+}
+
+
+#fb span {
+	vertical-align: middle;
+}
+
+#unicrew_logo {
+	border-radius: 100%;
+	margin: 1em;
+	max-width: 250px;
+}
+
+
+.unicrew-background {
+	text-align: center;
+	background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.9)), url('../img/newspaper.jpg');
+	background-size: cover;
+	margin: 0;
+}
+
+.unicrew-content {
+	font-size: 1.4em;
+	margin-bottom: 2em;
+}
+
+.unicrew-content p {
+	font-size: .9em;
+	margin: 0 2em;
+	padding: .2em .5em;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.unicrew-content h4 {
+	text-shadow: 2px 2px 10px black;
+}
+
+.videos p {
+		background: none;
+		margin-bottom: 2em;
+		text-align: center;
+		font-size: .6em;
+} */
+
+
+
+
+
+
+/*FOOTER*/
+	
+/* .footer {
+	background-color: #f28724;
+	text-align: center;
+	padding: 2em;
+}
+
+.sites {
+	display: inline-block;
+	padding: 1em 0;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;	
+	width: 500px;
+}
+
+.social {
+	border-top: 2px solid white;
+	padding-top: 1em;
+}
+
+.footer img {
+	height: 40px;
+	width: 40px;
+	margin: 1em 2em;
+	box-shadow: none;
+}
+
+.footer a:hover, a:active, a:focus {
+	color: #f9f4e8;
+	text-decoration: underline;
+}
+
+.footer a {
+	color: white;
+	text-decoration: underline;
+}
+
+.footer h2 {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+	
+#sitelink {
+	margin: 2em;
+	font-size: 1em;
+}
+	
+.final {
+	font-size: .7em;
+	border-bottom: 2px solid white;
+	padding-bottom: 1em;
 } */
