@@ -203,6 +203,23 @@ p {
 	transform: scale(1.03);
 }
 
+#author-row .card p {
+	font-size: 1vw;
+}
+
+#author-row .card img {
+	height: 300px;
+}
+
+#author-row .card {
+	max-height: 300px;
+}
+
+#author-row .card-content {
+	max-height: 80%;
+	overflow: ellipsis;
+}
+
 /* #sot {
 	background-color: #f28724;
 	vertical-align: middle;
