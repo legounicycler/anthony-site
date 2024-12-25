@@ -163,11 +163,17 @@ p {
 	max-width: 500px;
 }
 
+#unicyclist-row a:hover, #unicyclist-row a:active, #unicyclist-row a:focus {
+	color: #d06e0b;
+	text-decoration: underline;
+}
+
 /* AUTHOR */
 
 #author-row {
 	background: linear-gradient(rgba(50, 50, 50, 0.93), rgba(50, 50, 50, 0.93)), url('../img/books.jpg');
 	background-size: cover;
+	background-position: 50%;
 }
 
 #series {
@@ -190,6 +196,11 @@ p {
 
 #facebook-button {
 	background: linear-gradient(to right, #006495, #05349d);
+}
+
+#author-row a:hover.btn-large {
+	text-decoration: none;
+	transform: scale(1.03);
 }
 
 /* #sot {
