@@ -9,7 +9,6 @@
 	src: url(fonts/TheLastCall.ttf) format("truetype");
 }
 
-
 body {
   font-family: overpass, sans-serif;
   background-color: #F0F0F0;
@@ -82,6 +81,13 @@ p {
 	font-family: "Procrastinating Pixie", sans-serif;
 	letter-spacing: .1em;
 }
+
+/* Style all font awesome icons */
+.fa {
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.7rem !important;
+  }
 
 /* LANDING */
 
@@ -164,6 +170,28 @@ p {
 	background-size: cover;
 }
 
+#series {
+	max-height: 500px;
+	max-width: 100%; 
+}
+
+#author-row .btn-large {
+	justify-content: center;
+	width: 100%;
+}
+
+#son-of-time-website-button {
+	background: linear-gradient(to right, rgb(208, 0, 32), rgb(153 0 0));
+}
+
+#instagram-button {
+	background: linear-gradient(to right, rgb(255 141 0), rgb(230, 27, 115));
+}
+
+#facebook-button {
+	background: linear-gradient(to right, #006495, #05349d);
+}
+
 /* #sot {
 	background-color: #f28724;
 	vertical-align: middle;
@@ -238,6 +266,14 @@ margin-top: 20px;
 
 	.video {
 		max-width: 700px;
+	}
+
+	#facebook-button, #instagram-button, #son-of-time-website-button {
+		font-size: 1em;
+	}
+
+	.fa {
+		font-size: 1.2em !important;
 	}
 }
 
