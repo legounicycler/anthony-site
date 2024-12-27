@@ -50,7 +50,6 @@ h4 {
 
 p {
 	font-family: overpass, sans-serif;
-	font-size: 1.5em;
 	text-align: justify;
 }
 
@@ -82,19 +81,18 @@ p {
 	letter-spacing: .1em;
 }
 
-/* Style all font awesome icons */
-.fa {
-	text-align: center;
-	text-decoration: none;
-	font-size: 1.7rem !important;
-  }
+/* HELPERS */
+
+.flex {
+	display: flex;
+}
 
 /* LANDING */
 
 #landing{
 	background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('../img/Banner5.jpg') center;
 	background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%
 }
 
@@ -104,7 +102,7 @@ p {
 
 #profile {
   max-height: 50vh;
-  max-width: 50vh;
+  max-width: 40vw;
   box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
 
@@ -144,16 +142,11 @@ p {
 #unicyclist-row {
 	background: linear-gradient(rgba(235, 235, 235, 0.40), rgba(235, 235, 235, 0.90)), url('../img/Banner5.jpg');
 	background-size: cover;
-	background-position: bottom 50% right 42%;
+	background-position: bottom 50% right 46%;
 }
 
-#vid1 {
-	margin-top: 5em;
-}
-
-#vid2 {
-	margin-top: 3%;
-	margin-bottom: 3%;
+#video-row {
+	height: 100%;
 }
 
 .video {
@@ -181,7 +174,7 @@ p {
 	max-width: 100%; 
 }
 
-#author-row .btn-large {
+#author-row .btn-large, #author-row .btn {
 	justify-content: center;
 	width: 100%;
 }
@@ -198,13 +191,9 @@ p {
 	background: linear-gradient(to right, #006495, #05349d);
 }
 
-#author-row a:hover.btn-large {
+#author-button-row a:hover.btn-large {
 	text-decoration: none;
 	transform: scale(1.03);
-}
-
-#author-row .card p {
-	font-size: 1vw;
 }
 
 #author-row .card img {
@@ -213,34 +202,29 @@ p {
 
 #author-row .card {
 	max-height: 300px;
+	margin-bottom: 2em;
 }
 
-#author-row .card-content {
-	max-height: 80%;
-	overflow: ellipsis;
+#author-row .card-action a {
+	display: flex;
+	padding: 2px;
+	height: 60px;
+	font-size: 1.2em;
 }
 
-/* #sot {
-	background-color: #f28724;
-	vertical-align: middle;
-	background-position: center;
-	text-align: center;
-	transition: transform .5s;
-	height: 66px;
-	left: 20px;
+#son-of-time-description {
+	font-size: 1vw;
 }
 
-
-#sot:hover {
-	text-decoration: none;
-	transform: scale(1.02);
+#sierra-rod-description {
+	font-size: .86vw;
 }
 
-#book {
-max-height: 500px;
-margin-top: 20px;
-} */
-
+.card-content p {
+	justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
 /* ENGINEER */
 
@@ -248,10 +232,24 @@ margin-top: 20px;
 
 /*   MEDIA QUERIES   */	
 
-@media only screen and (max-width: 966px) {
+@media only screen and (min-width: 2200px) {
+	#unicyclist-row {
+		background-position: bottom 55% right 46%;
+	}
+
+	h1 {
+		font-size: 4vw;
+	}
 }
 
-/* Materialize MEDIUM media query breakpoint */
+@media only screen and (max-width: 1700px) {
+	/* Force columns to stack so videos look good on smaller screens */
+	#video-row .xl6 {
+        grid-column: auto / span 12 !important;
+    }
+}
+
+/* Materialize MEDIUM AND DOWN media query breakpoint */
 @media only screen and (max-width: 992px) {
 	h1 {
 		font-size: 4.5em;
@@ -260,6 +258,8 @@ margin-top: 20px;
 	#profile {
 		width: 325px;
 		height: 325px;
+		max-width: inherit;
+		max-height: inherit;
 	}
 
 	#arrow {
@@ -278,35 +278,55 @@ margin-top: 20px;
 		height: 40px;
 		width: 40px;
 	}
-}
 
-@media only screen and (max-width: 850px) {
-    
-	/* Force columns to stack so videos look good on smaller screens */
-	#unicyclist-row .m6 {
-        grid-column: auto / span 12 !important;
-    }
-
-	#unicyclist-row {
-		background: linear-gradient(rgba(223, 236, 238, 0.7), rgba(235, 235, 235, 0.90)), url('../img/Banner5.jpg');
-		background-position: bottom 50% right 48%;
+	#author-button-row .btn-large {
+		font-size: 2vw;
 	}
 
-	.video {
-		max-width: 700px;
+	#author-button-row .fa {
+		font-size: 2.7vw;
 	}
 
-	#facebook-button, #instagram-button, #son-of-time-website-button {
+	#author-row .card img {
+		height: 250px;
+	}
+
+	#book-card-row {
+		gap: 0px;
+	}
+
+	#author-row .card-content {
+		padding: 15px 20px;
+	}
+
+	#son-of-time-description {
+		font-size: 1.9vw;
+	}
+	
+	#sierra-rod-description {
+		font-size: 1.6vw;
+	}
+
+	#author-row .card-action a {
+		height: 40px;
 		font-size: 1em;
 	}
+}
 
-	.fa {
-		font-size: 1.2em !important;
+/* Special media query for unicyclist row to center background image */
+@media only screen and (max-width: 850px) {
+	#unicyclist-row {
+		background-position: bottom 50% right 46%;
 	}
 }
 
-/* Materialize SMALL media query breakpoint */
+/* Materialize SMALL AND DOWN media query breakpoint */
 @media only screen and (max-width: 600PX) {
+	#profile {
+		width: 80vw;
+		height: 80vw;
+	}
+	
 	#about-me-img {
 		height: 250px;
 	}
@@ -318,298 +338,57 @@ margin-top: 20px;
 	#vid1 {
 		margin-top: 1em;
 	}
-}
-	
-/* @media only screen and (max-width: 1474px) {
-	h1 {
-		font-size: 4.8em;
-	}
-	li {
-		font-size: 1.7em;
-	}
-}
 
-@media only screen and (max-width: 1415px) {
-	h1 {
-		font-size: 4.5em;
-	}
-}
-
-@media only screen and (max-width: 1278px) {
-	iframe {
-		width: 300px;
-		height: 168px;
-	}
-	p {
-		font-size: 1em;
-	}
-	.about-me {
-		font-size: .96em;
-		
-}
-
-
-	
-@media only screen and (max-width: 1023px) {
-	h3 {
-		font-size: 2.5em;
-	}
-	#book {
-		max-height: 450px;
-	}
-	.unicrew-content {
-		font-size: 1.2em;
-	}
-	.sot-content {
-		font-size: 1.2em;
-	
-	}
-	.about-me {
-		font-size: 1em;
-		height: auto;
-	}
-	.row {
-		display: inline-block;
-	}
-	#button-row {
-		width: 100%;
-	}
-	#icon {
-		max-width: 1.3em;
-	}
-	
-}
-
-
-
-@media only screen and (max-width: 975px) {
-	h1 {
-		font-size: 3em;
-	}
-	#logo {
-		max-height: 350px;
-		max-width: 350px;
-	}
-	.background-image {
-		height: 650px;
-	}
-	li {
-		font-size: 1.1em;
-	}
-	#arrow {
-		height: 50px;
-	}
-	h2 {
-		font-size: 1.5em;
+	#series {
+		height: 50vw;
+		width: 50vw;
 	}
 
-	
-@media only screen and (max-width: 885px) {
-	.background-image {
-		height: 750px;
-	}
-}
-
-@media only screen and (max-width: 585px) {
-	h1 {
-		font-size: 2.5em;
-	}
-	li {
-		font-size: .8em;
-	}
-	p {
-		font-size: .8em;
-	}
-	#unicrew_logo {
-		max-width: 180px;
-	}
-	.unicrew-content {
-		font-size: 1em;
-	}
-	.sot-content {
-		font-size: 1em;
-	}
-	.social img {
-		height: 35px;
-		width: 35px;
-		margin: .9em;
-	}
-	
-}
-
-@media only screen and (max-width: 487px) {
-	h1 {
-		font-size: 1.9em;
-	}
-	h2 {
-		font-size: 1.4em;
-	}
-	.sot-content {
-		font-size: 1em;
-	}
-	.unicrew-content {
-		font-size: 1em;
-	}
-	.about-me {
-		font-size: .8em;
-	}
-	#logo {
-		max-width: 240px;
-	}
-	#arrow {
+	#author-button-row .btn-large {
 		height: 40px;
 	}
-	li {
-		font-size: .7em;
-		border-width: 2px;
+
+	#author-button-row .btn-large {
+		font-size: 3vw;
 	}
-	#book {
-		max-height: 350px;
+
+	#author-button-row .fa {
+		font-size: 3vw;
 	}
+
+	#author-row .card img {
+		height: 200px;
+	}
+
+	#son-of-time-description {
+		font-size: 2.35vw;
+	}
+	
+	#sierra-rod-description {
+		font-size: 1.9vw;
+	}
+
+	#author-row .card-content {
+		padding: .5em 1em;
+	}
+
 }
 
-@media only screen and (max-width: 340px) {
+/* SUPER SMALL AND DOWN media query breakpoint */
+@media only screen and (max-width: 400px) {
 	h1 {
-		font-size: 1.5em;
+		font-size: 15vw;
 	}
-	h2 {
-		font-size: 1.2em;
+
+	#landing span, #about-me-col span {
+		font-size: 6vw;
 	}
-	li {
-		font-size: .6em;
+
+	#author-button-row .btn-large {
+		font-size: 2.5vw;
 	}
-	#logo {
-		max-width: 180px;
+
+	#author-button-row .fa {
+		font-size: 4vw;
 	}
-	#arrow {
-		height: 30px;
-	}
-	iframe {
-		width: 280px;
-		height: 158px;
-	}
-	.background-image {
-		height: 550px;
-	}
-		
-} */
-
-
-/* #crew-info p {
-	font-size: .8em;
 }
-
-
-#fb {
-	background-color: #3b5998;
-	vertical-align: middle;
-	text-align: left;
-	transition: transform .5s;
-}
-
-
-#fb:hover {
-	text-decoration: none;
-	transform: scale(1.02);
-}
-
-
-#fb span {
-	vertical-align: middle;
-}
-
-#unicrew_logo {
-	border-radius: 100%;
-	margin: 1em;
-	max-width: 250px;
-}
-
-
-.unicrew-background {
-	text-align: center;
-	background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.9)), url('../img/newspaper.jpg');
-	background-size: cover;
-	margin: 0;
-}
-
-.unicrew-content {
-	font-size: 1.4em;
-	margin-bottom: 2em;
-}
-
-.unicrew-content p {
-	font-size: .9em;
-	margin: 0 2em;
-	padding: .2em .5em;
-	background-color: rgba(0, 0, 0, .3);
-}
-
-.unicrew-content h4 {
-	text-shadow: 2px 2px 10px black;
-}
-
-.videos p {
-		background: none;
-		margin-bottom: 2em;
-		text-align: center;
-		font-size: .6em;
-} */
-
-
-
-
-
-
-/*FOOTER*/
-	
-/* .footer {
-	background-color: #f28724;
-	text-align: center;
-	padding: 2em;
-}
-
-.sites {
-	display: inline-block;
-	padding: 1em 0;
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;	
-	width: 500px;
-}
-
-.social {
-	border-top: 2px solid white;
-	padding-top: 1em;
-}
-
-.footer img {
-	height: 40px;
-	width: 40px;
-	margin: 1em 2em;
-	box-shadow: none;
-}
-
-.footer a:hover, a:active, a:focus {
-	color: #f9f4e8;
-	text-decoration: underline;
-}
-
-.footer a {
-	color: white;
-	text-decoration: underline;
-}
-
-.footer h2 {
-	font-size: 1.2em;
-	margin-bottom: 1em;
-}
-	
-#sitelink {
-	margin: 2em;
-	font-size: 1em;
-}
-	
-.final {
-	font-size: .7em;
-	border-bottom: 2px solid white;
-	padding-bottom: 1em;
-} */
