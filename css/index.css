@@ -229,7 +229,7 @@ h5 {
 /* ENGINEER */
 
 #engineer-row {
-	background: linear-gradient(rgba(203, 228, 238, 1.0), rgba(232, 239, 242, 0.8)), url('../img/blueprint.png');
+	background: linear-gradient(rgba(203, 228, 238, 0.9), rgba(232, 239, 242, 0.8)), url('../img/blueprint.png');
 	background-size: cover;
 	width: 100%;
 }
@@ -244,6 +244,10 @@ h5 {
 
 #engineer-row img {
 	max-height: 300px;
+}
+
+.caption {
+	margin-top: .5em;
 }
 
 /*   MEDIA QUERIES   */	
