@@ -238,6 +238,10 @@ p {
 	height: 600px;
 }
 
+#engineer-row .divider {
+	background-color: #263238;
+}
+
 /*   MEDIA QUERIES   */	
 
 @media only screen and (min-width: 2200px) {
