@@ -169,8 +169,12 @@ p {
 	background-position: 50%;
 }
 
+#series-row {
+	justify-content: center;
+}
+
 #series {
-	max-height: 500px;
+	max-height: 300px;
 	max-width: 100%; 
 }
 
@@ -202,7 +206,7 @@ p {
 
 #author-row .card {
 	max-height: 300px;
-	margin-bottom: 2em;
+	/* margin-bottom: 2em; */
 }
 
 #author-row .card-action a {
@@ -256,7 +260,7 @@ p {
 
 @media only screen and (max-width: 1700px) {
 	/* Force columns to stack so videos look good on smaller screens */
-	#video-row .xl6 {
+	#video-row .xl6, #gt1-pic-row .xl6 {
         grid-column: auto / span 12 !important;
     }
 }
@@ -286,6 +290,11 @@ p {
 		font-size: 1.2em;
 	}
 
+	#series {
+		height: 30vw;
+		width: 30vw;
+	}
+
 	.social-icon {
 		height: 40px;
 		width: 40px;
@@ -301,10 +310,6 @@ p {
 
 	#author-row .card img {
 		height: 250px;
-	}
-
-	#book-card-row {
-		gap: 0px;
 	}
 
 	#author-row .card-content {
@@ -382,6 +387,10 @@ p {
 
 	#author-row .card-content {
 		padding: .5em 1em;
+	}
+
+	#engineer-row {
+		gap: 0px;
 	}
 
 }
