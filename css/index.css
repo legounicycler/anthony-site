@@ -15,18 +15,23 @@ body {
   color: white;
 }
 
+p {
+	font-family: overpass, sans-serif;
+	text-align: justify;
+}
+
 a {
 	text-decoration: underline;
 	color: inherit;
 }
 
-.blue-grey-text a:hover, .blue-grey-text a:active, .blue-grey-text a:focus {
-	color: #d06e0b;
+a:hover, a:active, a:focus {
+	color: #78dde4;
 	text-decoration: underline;
 }
 
-a:hover, a:active, a:focus {
-	color: #78dde4;
+.blue-grey-text a:hover, .blue-grey-text a:active, .blue-grey-text a:focus {
+	color: #d06e0b;
 	text-decoration: underline;
 }
 
@@ -39,13 +44,12 @@ h1 {
 h2 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 3em;
-	margin-top: .4em;
 }
 
 h3 {
-  	font-family: 'Oswald', sans-serif;font-family: 'Raleway', sans-serif;
-  	font-size: 2em;
-  	font-weight: 200;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5em;
+	text-decoration: underline;
 }
 
 h4 {
@@ -53,17 +57,13 @@ h4 {
 	font-size: 3em;
 }
 
-p {
-	font-family: overpass, sans-serif;
-	text-align: justify;
-}
-
-#landing span {
-	font-family: 'Oswald', sans-serif;
+h5 {
+  	font-family: 'Raleway', sans-serif;
   	font-size: 2em;
+  	font-weight: 200;
 }
 
-#about-me-col span {
+#landing span, #about-me-col span {
 	font-family: 'Oswald', sans-serif;
   	font-size: 2em;
 }
@@ -92,6 +92,10 @@ p {
 	display: flex;
 }
 
+.justify-center {
+	justify-content: center;
+}
+
 /* LANDING */
 
 #landing{
@@ -100,10 +104,6 @@ p {
 	min-height: 100vh;
 	width: 100%
 }
-
-#profile-img-col {
-	justify-content: center;
-}  
 
 #profile {
   max-height: 50vh;
@@ -167,10 +167,6 @@ p {
 	background: linear-gradient(rgba(50, 50, 50, 0.93), rgba(50, 50, 50, 0.93)), url('../img/books.jpg');
 	background-size: cover;
 	background-position: 50%;
-}
-
-#series-row {
-	justify-content: center;
 }
 
 #series {
@@ -246,6 +242,10 @@ p {
 	background-color: #263238;
 }
 
+#engineer-row img {
+	max-height: 300px;
+}
+
 /*   MEDIA QUERIES   */	
 
 @media only screen and (min-width: 2200px) {
@@ -267,6 +267,12 @@ p {
 
 /* Materialize MEDIUM AND DOWN media query breakpoint */
 @media only screen and (max-width: 992px) {
+	#landing {
+		background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('../img/NZ2.jpg');
+		background-size: cover;
+		background-position: 50%;
+	}
+	
 	h1 {
 		font-size: 4.5em;
 	}
@@ -286,8 +292,8 @@ p {
 		background-position: 16%;
 	}
 
-	#about-me span {
-		font-size: 1.2em;
+	#about-me-col span {
+		font-size: 4vw;
 	}
 
 	#series {
@@ -348,14 +354,6 @@ p {
 		height: 250px;
 	}
 
-	.video {
-		width: 90%;
-	}
-
-	#vid1 {
-		margin-top: 1em;
-	}
-
 	#series {
 		height: 50vw;
 		width: 50vw;
@@ -363,9 +361,6 @@ p {
 
 	#author-button-row .btn-large {
 		height: 40px;
-	}
-
-	#author-button-row .btn-large {
 		font-size: 3vw;
 	}
 
