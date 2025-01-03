@@ -229,7 +229,7 @@ h5 {
 /* ENGINEER */
 
 #engineer-row {
-	background: linear-gradient(rgba(203, 228, 238, 0.9), rgba(232, 239, 242, 0.8)), url('../img/blueprint.png');
+	background: linear-gradient(rgba(209, 231, 239, 0.8), rgba(203, 228, 238, 0.8)), url('../img/blueprint.png');
 	background-size: cover;
 	width: 100%;
 }
@@ -242,12 +242,30 @@ h5 {
 	background-color: #263238;
 }
 
-#engineer-row img {
+#gt1-pic-row img {
 	max-height: 300px;
 }
 
 .caption {
 	margin-top: .5em;
+}
+
+#anthony-engineers-logo {
+	width: 100%;
+	height: auto; 
+	max-height: 450px;
+	max-width: 450px;
+}
+
+#vid3 {
+	width: 100%;
+	max-width: 800px;
+}
+
+/* FOOTER */
+
+footer {
+	height: 64px;
 }
 
 /*   MEDIA QUERIES   */	
