@@ -63,7 +63,7 @@ h5 {
   	font-weight: 200;
 }
 
-#landing span, #about-me-col span {
+#landing span, #about-me-desc span {
 	font-family: 'Oswald', sans-serif;
   	font-size: 2em;
 }
@@ -86,7 +86,7 @@ h5 {
 	letter-spacing: .1em;
 }
 
-/* HELPERS */
+/* MISC */
 
 .flex {
 	display: flex;
@@ -96,19 +96,28 @@ h5 {
 	justify-content: center;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* LANDING */
 
 #landing{
-	background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('../img/Banner1.jpg') center;
+	background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('../img/NZ1.jpg') center;
 	background-size: cover;
 	min-height: 100vh;
 	width: 100%
 }
 
+#landing a, #landing a:hover, #landing a:active, #landing a:focus {
+	text-decoration: none;
+	color: white;
+}
+
 #profile {
   max-height: 50vh;
   max-width: 40vw;
-  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.7);
 }
 
 .bordered-col {
@@ -119,7 +128,7 @@ h5 {
 
 /* ABOUT ME */
 
-#about-me-col {
+#about-me-desc {
 	background-color: #f28724;
 	padding: 0em 2em 2em 2em;
 	text-align: center;
@@ -127,7 +136,7 @@ h5 {
 }
 
 #about-me-img {
-	background-image: url('../img/banner6.jpg');
+	background-image: url('../img/Utah.jpg');
 	background-size: cover;
 	background-position: top left;
 }
@@ -145,7 +154,7 @@ h5 {
 /* UNICYCLIST */
 
 #unicyclist-row {
-	background: linear-gradient(rgba(235, 235, 235, 0.40), rgba(235, 235, 235, 0.90)), url('../img/Banner5.jpg');
+	background: linear-gradient(rgba(235, 235, 235, 0.40), rgba(235, 235, 235, 0.90)), url('../img/RedRock.jpg');
 	background-size: cover;
 	background-position: bottom 50% right 46%;
 }
@@ -202,7 +211,6 @@ h5 {
 
 #author-row .card {
 	max-height: 300px;
-	/* margin-bottom: 2em; */
 }
 
 #author-row .card-action a {
@@ -229,13 +237,14 @@ h5 {
 /* ENGINEER */
 
 #engineer-row {
-	background: linear-gradient(rgba(209, 231, 239, 0.8), rgba(203, 228, 238, 0.8)), url('../img/blueprint.png');
+	background: linear-gradient(rgba(209, 231, 239, 0.8), rgba(203, 228, 238, 0.8)), url('../img/blueprint.jpg');
 	background-size: cover;
 	width: 100%;
 }
 
 #pdf-viewer {
-	height: 600px;
+	background-color: #404040;
+	aspect-ratio: 8.5/11;
 }
 
 #engineer-row .divider {
@@ -255,9 +264,14 @@ h5 {
 	height: auto; 
 	max-height: 450px;
 	max-width: 450px;
+	box-shadow: 4px 4px 17px 2px rgba(0, 0, 0, 0.7);
 }
 
-#vid3 {
+#___ytsubscribe_0 {
+	margin: 10px 0px !important;
+}
+
+#engineering-video {
 	width: 100%;
 	max-width: 800px;
 }
@@ -266,6 +280,12 @@ h5 {
 
 footer {
 	height: 64px;
+	background: linear-gradient(to left, #e3780d, #f28724);
+}
+
+footer .social-icon {
+	height: 40px;
+	width: 40px;
 }
 
 /*   MEDIA QUERIES   */	
@@ -314,8 +334,12 @@ footer {
 		background-position: 16%;
 	}
 
-	#about-me-col span {
+	#about-me-desc span {
 		font-size: 4vw;
+	}
+
+	#author-row {
+		background-position-x: 60%;
 	}
 
 	#series {
@@ -408,6 +432,7 @@ footer {
 
 	#engineer-row {
 		gap: 0px;
+		background-position-x: 10%;
 	}
 
 }
@@ -418,7 +443,7 @@ footer {
 		font-size: 15vw;
 	}
 
-	#landing span, #about-me-col span {
+	#landing span, #about-me-desc span {
 		font-size: 6vw;
 	}
 
