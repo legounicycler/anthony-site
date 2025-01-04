@@ -1,12 +1,18 @@
 /* FONTS */
 @font-face {
-    font-family: "Procrastinating Pixie";
-    src: url(fonts/ProcrastinatingPixie.ttf) format("truetype");
+    font-family: "ProcrastinatingPixie";
+    src: url(../fonts/ProcrastinatingPixie.ttf) format("truetype");
 }
 
 @font-face {
-	font-family: "The Last Call";
-	src: url(fonts/TheLastCall.ttf) format("truetype");
+	font-family: "TheLastCall";
+	src: url(../fonts/TheLastCall.ttf) format("truetype");
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype'); 
 }
 
 body {
@@ -38,7 +44,6 @@ a:hover, a:active, a:focus {
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 5em;
-  font-weight: bold;
 }
 
 h2 {
@@ -69,8 +74,7 @@ h5 {
 }
 
 #unicyclist {
-	font-family: "The Last Call", sans-serif;
-	font-weight: 100;
+	font-family: 'TheLastCall', 'Lalezar', 'Open Sans', sans-serif;
 	letter-spacing: .03em;
 }
 
@@ -82,8 +86,8 @@ h5 {
 }
 
 #engineer {
-	font-family: "Procrastinating Pixie", sans-serif;
-	letter-spacing: .1em;
+	font-family: "ProcrastinatingPixie", "Open Sans", sans-serif;
+	letter-spacing: .08em;
 }
 
 /* MISC */
